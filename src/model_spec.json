@@ -1,0 +1,9 @@
+{
+    "layers": [
+      { "units": 128, "activation": "relu" },
+      { "units": 64,  "activation": "relu" }
+    ],
+    "output_units": 1,
+    "output_activation": null
+  }
+  
