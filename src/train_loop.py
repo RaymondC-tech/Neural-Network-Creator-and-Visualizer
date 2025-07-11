@@ -36,6 +36,7 @@ def train_one_epoch(model, dataloader, loss_fn, optimizer, device):
 
 def train(csv_path: str, target: str, spec_path: str, 
           epochs: int = 5, batch: int = 32, lr: float = 1e-3):
+    """Function that trains the model over epochs many times"""
     device = get_device()
     dl = make_dataloader(csv_path, target, batch)        # DataLoader() wraps dataset so Pytorch can hand out mini-batches of size batch, shuffled each epoch d1 is now an iterator, each iteration returns (xb, yb) - a batch of featuers and labels
     model = make_model(dl.dataset.X.shape[1], spec_path, device)
