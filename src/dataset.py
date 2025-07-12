@@ -100,3 +100,6 @@ class TabularDataset(Dataset):
         #return self.X[idx], self.y[idx]     #one (featuer, label) pair
     
     #example, self.X = [-0.806, -0.392, -0.539] [ 0.453, 0.588, 0.312] (first two rows) self.Y = 245000. 312000. (2 rows which is price collumn)
+
+
+  
